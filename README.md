@@ -1,6 +1,6 @@
 # FSRA Auto Insurance Underwriting Rule Assessment Tool
 
-An AI-assisted regulatory evaluation tool built for the Ivey Capstone project. It helps regulatory analysts at the Financial Services Regulatory Authority of Ontario (FSRA) assess proposed auto insurance underwriting decline rules against a structured 4-level compliance framework.
+An AI-assisted regulatory evaluation tool built for the Ivey Business School Capstone project. It helps regulatory analysts at the Financial Services Regulatory Authority of Ontario (FSRA) assess proposed auto insurance underwriting decline rules against a structured 4-level compliance framework.
 
 **Live Demo:** https://iveycapstone-project.onrender.com
 
@@ -10,7 +10,6 @@ An AI-assisted regulatory evaluation tool built for the Ivey Capstone project. I
 
 ## Screenshots
 
-<!-- Add screenshots here. Recommended: -->
 <!-- 1. Rule submission form -->
 <img width="2560" height="1142" alt="image" src="https://github.com/user-attachments/assets/aaeffa57-83b9-4747-85f0-faf7ab2b60cf" />
 
@@ -20,7 +19,7 @@ An AI-assisted regulatory evaluation tool built for the Ivey Capstone project. I
 <!-- 3. Chatbot panel -->
 <img width="2560" height="1142" alt="image" src="https://github.com/user-attachments/assets/99a34554-e046-43be-ba63-d46108eb5e96" />
 
-<!-- To add: drag images into this section on GitHub, or use: ![Description](path/to/image.png) -->
+---
 
 ## Solution Architecture
 
@@ -46,7 +45,7 @@ flowchart TD
     end
 
     subgraph AI ["🤖 OpenRouter API  ·  LLM Fallback Chain"]
-        M1["openai/gpt-oss-20b"]
+        M1["openai/gpt-4o-mini"]
         M2["google/gemma-3-27b-it"]
         M3["meta-llama/llama-3.3-70b"]
         M4["nvidia/nemotron-120b"]
@@ -74,8 +73,6 @@ flowchart TD
 ```
 
 ---
-
-
 
 **Simon L** — [Ivey AI Prototyping for Business Innovation](https://www.ivey.uwo.ca/executive-education/online/cohorts/ai-prototyping-for-business-innovation/), Cohort 2026
 
@@ -115,7 +112,7 @@ Under Ontario's **Take All Comers Rule** (Insurance Act), insurers must offer au
 |-------|-----------|
 | Frontend | React 18 + Vite + TailwindCSS |
 | Backend | Python 3.11+ + FastAPI |
-| AI | OpenRouter (multi-model fallback) |
+| AI | OpenRouter (multi-model fallback: GPT-4o Mini primary) |
 | Deployment | Render.com (single service) |
 
 ---
@@ -125,14 +122,13 @@ Under Ontario's **Take All Comers Rule** (Insurance Act), insurers must offer au
 ### Prerequisites
 - Python 3.11+
 - Node.js 18+
-- An [OpenRouter](https://openrouter.ai) API key (free)
+- An [OpenRouter](https://openrouter.ai) API key
 
-### 1. Clone the repo and switch to the development branch
+### 1. Clone the repo
 
 ```bash
-duck46/Ivey-Business-School-Capstone-Project.git
+git clone https://github.com/duck46/Ivey-Business-School-Capstone-Project.git
 cd Ivey-Business-School-Capstone-Project
-git checkout claude/ivey-capstone-setup-q7lOo
 ```
 
 ### 2. Set up the backend
@@ -209,7 +205,7 @@ The `render.yaml` at the project root handles all configuration.
 ## Project Structure
 
 ```
-IveyCapstone-Project/
+Ivey-Business-School-Capstone-Project/
 ├── render.yaml                  # Render deployment config
 ├── .env.example                 # Environment variable template
 ├── backend/
@@ -260,4 +256,4 @@ This project was built for academic purposes as part of the Ivey AI Prototyping 
 
 The regulatory framework, assessment criteria, approved rules references, and Ontario legislation references used in this project are derived from publicly available FSRA guidance and enterprise sources. This repository is shared for portfolio and educational purposes only and is **not intended for commercial use, redistribution, or reuse** without explicit permission from the author.
 
-&copy; 2025 Simon L. All rights reserved.
+&copy; 2026 Simon L. All rights reserved.

@@ -84,6 +84,12 @@ Under Ontario's **Take All Comers Rule** (Insurance Act), insurers must offer au
 
 ---
 
+## Development Approach
+
+This project was built using AI-assisted vibe coding (Claude and Gemini), developed iteratively component by component rather than generated all at once. Each part of the stack — UI, API, prompt design, deployment — was directed and refined individually, which is what gives the tool its domain-specific structure rather than a generic out-of-the-box feel.
+
+---
+
 ## Features
 
 - **4-Level Rule Assessment** — Evaluates any proposed decline rule against Basic Compliance, FSRA Principles, Subjectivity/Arbitrariness, and Public Policy criteria
